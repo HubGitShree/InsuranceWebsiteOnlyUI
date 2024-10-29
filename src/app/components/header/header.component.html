@@ -1,0 +1,66 @@
+<!-- RECAP -->
+<!--  REMEMBER : mx-auto will center the div -->
+<!-- font awesome html is easier to customise as compared to svgs -->
+
+
+  
+  <!-- Navbar -->
+<nav class="flex items-center justify-between p-7 bg-white ">
+  <!-- Logo -->
+  <div class="flex items-center">
+    <a href="#" class="text-2xl font-bold text-teal-600">Logo</a>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="hidden md:flex items-center">
+    <input
+      type="text"
+      placeholder="Search here..."
+      class="border-b border-gray-300  px-4 py-2 outline-none focus:border-teal-500"
+    />
+  </div>
+
+  <!-- Navbar Linnks -->
+  <div class="hidden md:flex space-x-6 text-gray-700 font-bold">
+    <a href="#" class="hover:text-teal-500">Home </a>
+    <!--  group utility I have used for hover animation purposes -->
+    <div class="relative group">
+      <button class="hover:text-teal-500">Pages </button>
+      <!-- Pages -->
+      <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden group-hover:block">
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-teal-100">Page 1</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-teal-100">Page 2</a>
+      </div>
+    </div>
+    <div class="relative group">
+      <button class="hover:text-teal-500">Insurances</button>
+      <!-- Insurances -->
+      <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden group-hover:block">
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-teal-100">Insurance 1</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-teal-100">Insurance 2</a>
+      </div>
+    </div>
+    <a href="#" class="hover:text-teal-500">Blog</a>
+    <a href="#" class="hover:text-teal-500">Contact Us</a>
+  </div>
+
+ <!-- Contact and get a quote button -->
+  <div class="flex items-center space-x-4">
+    <i class="fa-solid fa-phone-volume fa-beat fa-2xs" style="color: #63E6BE; font-size: 22px;"></i>
+    <p  class="hidden md:flex items-center text-teal-600">
+      +(111) 65 458 856
+    </p>
+    <button
+  class="bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition inline-flex items-center space-x-2"
+>
+<i class="fa-solid fa-pen-fancy fa-sm"></i>
+  <span>Get A Quote</span>
+</button>
+    <!-- Responsive Design Starting Mobile Menu Icon -->
+    <button class="">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+</nav>
